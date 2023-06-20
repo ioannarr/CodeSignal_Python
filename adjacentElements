@@ -1,0 +1,11 @@
+def solution(inputArray):
+
+    length = len(inputArray) 
+     
+    suma = []
+     
+    for i in range(length-1):
+        
+        suma.append(inputArray[i] * inputArray[i+1]) 
+        
+    return max(suma) 
