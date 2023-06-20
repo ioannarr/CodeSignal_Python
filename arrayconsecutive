@@ -1,0 +1,10 @@
+def solution(statues):
+    counter = 0
+    statues.sort()    
+    x = range(0, len(statues)-1)
+    
+    for elem in x:
+        if(statues[elem+1] - statues[elem]) > 1:
+            counter = counter + statues[elem+1] - statues[elem] - 1
+    return counter
+        
